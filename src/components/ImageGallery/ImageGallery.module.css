@@ -1,0 +1,11 @@
+.image_galary {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.image_galary_item {
+  width: ((100% - 5 * 2 * 15px)/5);
+}

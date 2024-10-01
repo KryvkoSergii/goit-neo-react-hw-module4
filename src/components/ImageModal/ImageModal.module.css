@@ -1,0 +1,25 @@
+.close_button {
+    position: absolute;
+    outline: none;
+    top: 24px;
+    right: 24px;
+    background-color: #E7E9FC;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    border:  #E7E9FC solid 2px;
+    padding: 0;
+    cursor: pointer;
+    fill: #2E2F42;
+}
+
+.close_button:hover {
+    background-color: #404BBF;
+    border: #404BBF solid 2px;
+    fill: #E7E9FC;
+}
+
+.close_button svg {
+    width: 8px;
+    height: 8px;
+}
