@@ -4,17 +4,13 @@ import css from "./ImageGallery.module.css";
 
 export default function ImageGallery({ list, onImageClick }) {
   return (
-    <ul className={css.image_galary}>
-      {list.map((image) => singleElement(image, onImageClick))}
+    <ul className={css.image_gallary}>
+      {list.map((image) => (
+        <li key={image.id} className={css.image_gallary_item}>
+          <ImageCard image={image} onImageClick={onImageClick} />
+        </li>
+      ))}
     </ul>
-  );
-}
-
-function singleElement(image, onImageClick) {
-  return (
-    <li key={image.id} className={css.image_galary_item}>
-      <ImageCard image={image} onImageClick={onImageClick} />
-    </li>
   );
 }
 
@@ -31,5 +27,5 @@ let Image = PropTypes.shape({
 
 ImageGallery.propTypes = {
   list: PropTypes.arrayOf(Image),
-  onImageClick: PropTypes.any
+  onImageClick: PropTypes.func,
 };

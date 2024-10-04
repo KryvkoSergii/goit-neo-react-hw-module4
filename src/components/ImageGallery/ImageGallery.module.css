@@ -1,4 +1,4 @@
-.image_galary {
+.image_gallary {
   display: flex;
   gap: 15px;
   width: 100%;
@@ -6,6 +6,6 @@
   flex-wrap: wrap;
 }
 
-.image_galary_item {
+.image_gallary_item {
   width: ((100% - 5 * 2 * 15px)/5);
 }
